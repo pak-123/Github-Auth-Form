@@ -144,7 +144,7 @@ document.getElementById("github-auth")?.addEventListener("click", () => {
         .catch((err) => {
             console.log("Error:", err.code);
 
-            let message = "Google login failed";
+            let message = "Github login failed";
 
             if (err.code === "auth/popup-closed-by-user") {
                 message = "Popup closed before login";
