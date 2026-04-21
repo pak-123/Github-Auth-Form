@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(124, 48, 247);
+    font-family: "Poppins", sans-serif;
+}
+
+/* container */
+#auth-container {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 310px;
+    text-align: center;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    animation: slideDown 0.8s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#auth-container:hover {
+    transform: translateY(-5px);
+}
+
+/* heading */
+#auth-container h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+/* input field  */
+label {
+    display: block;
+    text-align: left;
+    margin: 6px 0 4px;
+    font-size: 15px;
+}
+
+label span {
+    float: right;
+    color: rgb(124, 48, 247);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+label span:hover {
+    text-decoration: underline;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(240, 236, 236);
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+input:hover {
+    border: 1px solid black;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(124, 48, 247);
+    box-shadow: 0 0 5px rgb(124, 48, 247);
+}
+
+/* OR LINE  */
+.or-line {
+    position: relative;
+    text-align: center;
+    margin: 4px 0;
+}
+
+.or-line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.or-line p {
+    display: inline-block;
+    background: white;
+    padding: 0 10px;
+    position: relative;
+    font-size: 13px;
+    color: #666;
+}
+
+/* button  */
+.social-btn button {
+    padding: 11px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(240, 236, 236);
+    border: 1px solid #c9c9c9;
+    color: #111;
+    cursor: pointer;
+    font-size: 14px;
+    width: 47%;
+    display: inline-block;
+    margin: 5px 1%;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.social-btn button:hover{
+      background-color: #6666663f;
+}
+
+/* icon */
+.social-btn button img,
+.social-btn button img {
+    width: 18px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+
+/* links */
+p {
+    color: #333;
+    font-size: 14px;
+}
+
+a {
+    color: rgb(124, 48, 247);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* login / sign up button */
+.link-btn {
+    padding: 14px;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(124, 48, 247);
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.link-btn:hover{
+       background-color: rgb(108, 31, 231);
+}
+
+
+/* welcome */
+.welcome-page {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.welcome-page h1 {
+    line-height: 40px;
+}
+
+/* responsive */
+@media (max-width:480px) {
+    #auth-container {
+        width: 240px;
+        padding: 1.5rem;
+    }
+
+    input {
+        width: 100%;
+    }
+}

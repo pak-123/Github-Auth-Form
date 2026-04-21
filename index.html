@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Auth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- login form -->
+    <div id="auth-container">
+        <h1>Login with</h1>
+
+        <div class="social-btn">
+            <button id="google-auth"><img src="./icon1.png" alt="Google">Google</button>
+            <button id="github-auth"><img src="./icon2.png" alt="github">Github</button>
+        </div>
+
+        <div class="or-line">
+            <p>OR</p>
+        </div>
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter email address">
+
+        <label>Password <i><span>Forgot Password?</span></i></label>
+        <input type="password" id="password" placeholder="Enter your Password">
+
+
+        <button id="login" class="link-btn">LOGIN</button>
+
+        <p>Don't have an account? <i><a href="./signup.html">Signup</a></i></p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
